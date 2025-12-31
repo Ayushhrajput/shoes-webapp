@@ -9,7 +9,7 @@ body {
 .title {
     font-family: font-style;
     position: absolute;
-    font-size: 80px;
+    font-size: 60px;
     left: 50%;
     top: 50%;
     transform: translateX(-50%);
@@ -17,7 +17,7 @@ body {
 .stroke-title {
     font-family: font-style;
     position: absolute;
-    font-size: 80px;
+    font-size: 60px;
     left: 50%;
     z-index: 1;
     top: 50%;
@@ -31,13 +31,13 @@ body {
     overflow: hidden;
 }
 .item1 {
-    background: #c90e0e;
+    background: #e60e0e;
 }
 .item1 .title {
-    color: rgb(136, 6, 6);
+    color: rgb(155, 6, 6);
 }
 .item1 .stroke-title {
-    -webkit-text-stroke: 4px rgb(136, 6, 6);
+    -webkit-text-stroke: 4px rgb(155, 6, 6);
 }
 .item2 {
     background: rgb(54, 54, 54);
@@ -49,7 +49,7 @@ body {
     -webkit-text-stroke: 4px rgb(19, 19, 19);
 }
 .img {
-    width:  400px;
+    width: 250px;
     margin: auto;
     position: absolute;
     inset: 0;
@@ -66,7 +66,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    width: 360px;
+    width: 250px;
     justify-content: space-around;
     align-items: center;
     background: #000;
