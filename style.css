@@ -1,0 +1,100 @@
+@font-face{
+    font-family: 'font-style';
+    src: url('BBHBartle-Regular.ttf');
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.title {
+    font-family: font-style;
+    position: absolute;
+    font-size: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.stroke-title {
+    font-family: font-style;
+    position: absolute;
+    font-size: 80px;
+    left: 50%;
+    z-index: 1;
+    top: 50%;
+    transform: translateX(-50%);
+    color: transparent;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.item1 {
+    background: #c90e0e;
+}
+.item1 .title {
+    color: rgb(136, 6, 6);
+}
+.item1 .stroke-title {
+    -webkit-text-stroke: 4px rgb(136, 6, 6);
+}
+.item2 {
+    background: rgb(54, 54, 54);
+}
+.item2 .title {
+    color: rgb(19, 19, 19);
+}
+.item2 .stroke-title {
+    -webkit-text-stroke: 4px rgb(19, 19, 19);
+}
+.img {
+    width:  400px;
+    margin: auto;
+    position: absolute;
+    inset: 0;
+    display: none;
+    animation: move 1s;
+    transition: all ease;
+}
+.show {
+    display: block;
+}
+.box {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 360px;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+    padding: 4px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 100px;
+}
+.box div {
+    cursor: pointer;
+}
+@media (min-width: 600px) {
+    .title, .stroke-title {
+        font-size: 160px;
+        top: 40%;
+    }
+    .img {
+        width: 600px;
+    }
+}
+@keyframes move{
+    0%{
+        transform: translateY(-80px);
+        rotate: -25deg;
+    }
+    100%{
+        transform: translateY(0px);
+        rotate: 0deg;
+    }
+}
